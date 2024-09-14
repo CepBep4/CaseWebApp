@@ -25,4 +25,5 @@ activate
 `python3 wsgi.py`
 
 ![Документация к API](https://github.com/CepBep4/CaseWebApp/blob/main/Докуметация%20к%20API.png)
+![Структура базы данных](https://github.com/CepBep4/CaseWebApp/blob/main/Структура%20базы%20данных.jpg)
 
