@@ -1,0 +1,130 @@
+
+
+2024-09-14 20:54:58.818975
+exceptions must derive from BaseException
+
+2024-09-14 20:55:27.962989
+exceptions must derive from BaseException
+
+2024-09-14 20:55:46.447086
+exceptions must derive from BaseException
+
+2024-09-14 20:56:03.112041
+exceptions must derive from BaseException
+
+2024-09-14 20:56:17.874386
+exceptions must derive from BaseException
+
+2024-09-14 21:55:46.686885
+'list' object has no attribute '__dict__'
+
+2024-09-14 22:01:24.572719
+'User' object is not iterable
+
+2024-09-14 22:02:20.562822
+'User' object has no attribute 'all'
+
+2024-09-14 22:02:40.663397
+'User' object has no attribute 'fetchall'
+
+2024-09-14 22:02:50.166828
+'User' object has no attribute 'fetch'
+
+2024-09-14 22:04:50.316012
+'InstanceState' object has no attribute '_post_inspect'
+
+2024-09-14 22:05:32.132231
+'InstanceState' object has no attribute '_post_inspect'
+
+2024-09-14 22:05:34.797313
+'InstanceState' object has no attribute '_post_inspect'
+
+2024-09-14 22:08:38.943868
+User.get_val() takes 0 positional arguments but 1 was given
+
+2024-09-14 22:23:01.269689
+User.get_val() missing 1 required positional argument: 'self'
+
+2024-09-14 22:23:35.883329
+(sqlite3.ProgrammingError) Error binding parameter 1: type 'list' is not supported
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.chat_id AS user_chat_id, user.balance AS user_balance 
+FROM user 
+WHERE user.balance = ?
+ LIMIT ? OFFSET ?]
+[parameters: (['10'], 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+2024-09-14 22:24:12.458853
+(sqlite3.ProgrammingError) Error binding parameter 1: type 'list' is not supported
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.chat_id AS user_chat_id, user.balance AS user_balance 
+FROM user 
+WHERE user.balance = ?
+ LIMIT ? OFFSET ?]
+[parameters: (['10'], 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+2024-09-14 22:50:02.589257
+(sqlite3.ProgrammingError) Error binding parameter 1: type 'list' is not supported
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.chat_id AS user_chat_id, user.balance AS user_balance 
+FROM user 
+WHERE user.id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (['1'], 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+2024-09-14 22:50:19.119780
+(sqlite3.ProgrammingError) Error binding parameter 1: type 'list' is not supported
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.chat_id AS user_chat_id, user.balance AS user_balance 
+FROM user 
+WHERE user.id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (['1'], 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+2024-09-14 22:50:57.084599
+(sqlite3.ProgrammingError) Error binding parameter 1: type 'list' is not supported
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.chat_id AS user_chat_id, user.balance AS user_balance 
+FROM user 
+WHERE user.id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (['1'], 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+2024-09-14 22:56:19.738846
+(sqlite3.ProgrammingError) Error binding parameter 1: type 'list' is not supported
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.chat_id AS user_chat_id, user.balance AS user_balance 
+FROM user 
+WHERE user.id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (['1'], 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+2024-09-14 22:57:11.711627
+(sqlite3.ProgrammingError) Error binding parameter 1: type 'list' is not supported
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.chat_id AS user_chat_id, user.balance AS user_balance 
+FROM user 
+WHERE user.id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (['1'], 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+2024-09-14 22:57:28.087488
+(sqlite3.ProgrammingError) Error binding parameter 1: type 'list' is not supported
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.chat_id AS user_chat_id, user.balance AS user_balance 
+FROM user 
+WHERE user.id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (['1'], 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+2024-09-14 22:58:36.576331
+User.get_val() takes 1 positional argument but 2 were given
+
+2024-09-14 23:00:05.410140
+User.get_val() takes 1 positional argument but 2 were given
+
+2024-09-14 23:05:39.756817
+'User' object has no attribute 'curr'
+
+2024-09-14 23:06:09.565332
+'User' object has no attribute 'curr'
