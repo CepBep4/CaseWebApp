@@ -24,5 +24,5 @@ activate
 # Запуск
 `python3 wsgi.py`
 
-[Документация к API](https://github.com/CepBep4/CaseWebApp/blob/main/Докуметация%20к%20API.png)
+![Документация к API](https://github.com/CepBep4/CaseWebApp/blob/main/Докуметация%20к%20API.png)
 
