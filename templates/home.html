@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ</title>
+    <link rel="stylesheet" href="../static/home.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='home.css')}}">
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+</head>
+
+<body onload="loadCookie()">
+    <div class="login-content">
+        <div class="label-head-1">Админ-панель</div>
+        <div class="label-head-2" id="login-l">Логин</div>
+        <input type="text" id="login" class="inputs" onchange="checkCorrect()" onforminput="checkCorrect()">
+        <div class="label-head-2" id="passsword-l">Пароль</div>
+        <input type="text" id="password" class="inputs" onchange="checkCorrect()" onforminput="checkCorrect()">
+    </div>
+    <div class="main-content">
+        <select id="select-table" onchange="loadStruct()"></select>
+        <select id="choice-operation" onchange="checkOperation()">
+            <option>Смотреть</option>
+            <option>Добавить</option>
+        </select>
+        <div id="layout">
+            <table id="table-view"></table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login-content {
+    position: relative;
+    width: 350px;
+    height: 600px;
+    background: #5d5d5d;
+    border-radius: 20px;
+    display: none;
+}
+
+.main-content {
+    position: relative;
+    width: 350px;
+    height: 600px;
+    background: #5d5d5d;
+    border-radius: 20px;
+}
+
+.main-content-hidden {
+    display: none;
+}
+
+.label-head-1 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Arial';
+    color: aliceblue;
+    padding: 15px;
+}
+
+.label-head-2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Arial';
+    color: aliceblue;
+    padding: 15px;
+}
+
+#login-l {
+    margin-left: 120px;
+    margin-top: 150px;
+}
+
+#passsword-l {
+    margin-left: 115px;
+}
+
+.inputs {
+    width: 150px;
+    border-radius: 10px;
+    border: 0;
+}
+
+#login {
+    margin-left: 90px;
+}
+
+#password {
+    margin-left: 90px;
+}
+
+#select-table {
+    width: 310px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#layout {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #00000000;
+    width: 90%;
+    height: 515px;
+    margin-bottom: 20px;
+    overflow: scroll;
+}
+
+#choice-operation {
+    width: 310px;
+    margin-left: 20px;
+}
+
+#table-view {
+    color: aliceblue;
+    width: 100%;
+}
+
+th {
+    text-align: center;
+    border: solid black 1px;
+    font-family: 'Arial';
+}
+
+td {
+    text-align: center;
+    font-family: 'Arial';
+}
+
+.accept-button {
+    border-radius: 20px;
+    background: #8d8d8d;
+}
+
+.accept-button:hover {
+    background: #adadad;
+}

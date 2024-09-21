@@ -2,6 +2,7 @@ from sqlalchemy import create_engine, Column, Integer, Text, Boolean, JSON, Floa
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from loggs import write_log
+from traceback import print_exc
 
 DATABASE_URL = f"sqlite:///db.sqlite3"
 
@@ -41,7 +42,7 @@ class Case(Base):
     id = Column(Integer, autoincrement=True, primary_key=True)
     name = Column(Text, nullable=True, unique=True)
     content = Column(JSON, nullable=True)
-    сhance = Column(Float, nullable=True)
+    сhance = Column(JSON, nullable=True)
     
     def get_val(self):
         return {
@@ -73,23 +74,23 @@ class Promo(Base):
     id = Column(Integer, autoincrement=True, primary_key=True)
     name = Column(Text, nullable=True)
     count = Column(Integer, nullable=True)
-    count_usage = Column(Integer, nullable=True)
-    activate_users = Column(JSON)
+    name_prize = Column(Text, nullable=True)
+    chance = Column(Integer, nullable=True)
     
     def get_val(self):
         return {
             'id':self.id,
             'name':self.name,
             'count':self.count,
-            'count_usage':self.count_usage,
-            'activate_users':self.activate_users,
+            'name_prize':self.name_prize,
+            'chance':self.chance,
         }
 
 control_class = {
     'promo': Promo,
     'user': User,
     'case': Case,
-    'History': History
+    'history': History
 }
 
 def base_get(table: str, key, value) -> any:
@@ -120,11 +121,11 @@ def base_get_all(table):
         return data
     
     except Exception as error:
+        print_exc()
         return write_log(str(error))
     
 def base_edit(table, key, value, data) -> any:
     try:
-        print(type(data))
         Session = sessionmaker()
         session = Session(bind = engine)
         table = control_class[table]
@@ -133,7 +134,7 @@ def base_edit(table, key, value, data) -> any:
         curr = session.query(table).filter(table.get_val(table)[key] == value).first()
 
         for key in list(data):
-            curr.__dict__[key]=data[key]
+            setattr(curr, key, data[key])
             
         session.commit()
         session.close()
@@ -141,6 +142,25 @@ def base_edit(table, key, value, data) -> any:
     
     except Exception as error:
         return write_log(str(error))
+    
+def base_add(table,js):
+    try:
+        del js['id']
+        Session = sessionmaker()
+        session = Session(bind = engine)
+        table = control_class[table]
 
+        #Выдача базы
+        new = table(**js)
+        # new = table(username = 'text', balance = 100, chat_id = 100)
+        session.add(new)
+        
+        session.commit()
+        session.close()
+        return {'success': True}
+    
+    except Exception as error:
+        print_exc()
+        return write_log(str(error))
 
 Base.metadata.create_all(engine)
