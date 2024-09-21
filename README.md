@@ -26,4 +26,5 @@ activate
 
 ![Документация к API](https://github.com/CepBep4/CaseWebApp/blob/main/Докуметация%20к%20API.png)
 ![Структура базы данных](https://github.com/CepBep4/CaseWebApp/blob/main/Структура%20базы%20данных.jpg)
+![Документация к Админ-паннели](https://github.com/CepBep4/CaseWebApp/blob/main/Документация%20к%20Админ-паннели.png)
 
